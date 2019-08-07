@@ -7,12 +7,14 @@ modified value.yaml
 
 mysql:
   rootPassword: root.123
+  
 persistence:
   enabled: false
   
   # type: Loadbalancer is not supported
 service:
   type: NodePort
+  
 ingress:
   enabled: true
   domain: example.com
