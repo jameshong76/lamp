@@ -4,7 +4,7 @@ Ever wanted to deploy a [LAMP Stack](https://en.wikipedia.org/wiki/LAMP_(softwar
 
 # my note
 modified value.yaml 
-
+```console
 mysql:
   rootPassword: root.123
   
@@ -20,7 +20,7 @@ ingress:
   domain: example.com
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
-
+```
 
 ## TL;DR;
 
