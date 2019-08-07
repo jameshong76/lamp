@@ -2,6 +2,24 @@
 
 Ever wanted to deploy a [LAMP Stack](https://en.wikipedia.org/wiki/LAMP_(software_bundle)) on Kubernetes?
 
+# my note
+modified value.yaml 
+
+mysql:
+  rootPassword: root.123
+persistence:
+  enabled: false
+  
+  # type: Loadbalancer is not supported
+service:
+  type: NodePort
+ingress:
+  enabled: true
+  domain: example.com
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+
+
 ## TL;DR;
 
 ```console
